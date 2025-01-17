@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_app_ui_setup/widgets/build_list_view.dart';
 import 'package:news_app_ui_setup/widgets/category_list_view.dart';
-import 'package:news_app_ui_setup/widgets/news_list_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -44,14 +44,9 @@ class HomeScreen extends StatelessWidget {
                   height: 32,
                 ),
               ),
-              NewsListView(),
+              NewsListViewBuilder(),
             ],
           ),
-          // Column(children: [
-          //    CategoryListView(),
-          //    SizedBox(height: 32,),
-          //    Expanded(child: NewsListView()),
-          // ],),
         ));
   }
 }
