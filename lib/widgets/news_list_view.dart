@@ -4,7 +4,7 @@ import 'package:news_app_ui_setup/services/news_service.dart';
 import 'package:news_app_ui_setup/widgets/news_container.dart';
 
 class NewsListView extends StatelessWidget {
-   NewsListView({
+   const NewsListView({
     super.key,required this.articles
   });
 
